@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadina"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/backButtonA"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:text="O aplikaciji"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/about_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:text="Aplikacija omogućava korisnicima da saznaju trenutne vremenske prilike za bilo koju lokaciju na svetu. Korišćenjem pretraživača, aplikacija vam omogućava da brzo i lako dobijete podatke o temperaturi, vlažnosti vazduha, brzini vetra i drugim vremenskim uslovima za željeni grad."
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_title" />
+
+    <TextView
+        android:id="@+id/about_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bez obzira gde se nalazite, ova aplikacija vam pruža najnovije i tačne informacije zahvaljujući integraciji sa OpenWeather API-jem, jednim od vodećih servisa za vremenske podatke. Naš cilj je da korisnicima omogućimo brz i jednostavan pristup vremenskoj prognozi, bilo da planirate putovanje, dnevne aktivnosti ili samo želite da proverite vreme."
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="5dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_text1"/>
+
+    <TextView
+        android:id="@+id/about_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikacija je dizajnirana da bude laka za korišćenje, sa intuitivnim interfejsom i opcijama koje vam omogućavaju da pretražujete i pratite vremenske uslove za više lokacija širom sveta."
+        android:layout_marginTop="5dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_text2" />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/app"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_text3" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_ab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_nav_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/white"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

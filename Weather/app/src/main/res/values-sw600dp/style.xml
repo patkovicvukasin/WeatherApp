@@ -1,0 +1,5 @@
+<resources>
+    <style name="CustomBottomNavTextStyle">
+        <item name="android:textSize">22sp</item>
+    </style>
+</resources>

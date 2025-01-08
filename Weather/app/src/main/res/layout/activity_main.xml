@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/pozadina"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="210dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/app">
+    </ImageView>
+
+    <Button
+        android:id="@+id/searchCityButton"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Pretraga"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/button_back"
+        android:textSize="20sp"
+        android:imeOptions="actionGo"
+        android:inputType="textAutoCorrect"
+        android:onClick="onSearchCityButtonClick"/>
+
+    <Button
+        android:id="@+id/favorites_button"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/searchCityButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Omiljeni"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/button_back"
+        android:textSize="20sp"
+        android:onClick="openFavorites"
+        android:imeOptions="actionGo"
+        android:inputType="textAutoCorrect" />
+
+</RelativeLayout>

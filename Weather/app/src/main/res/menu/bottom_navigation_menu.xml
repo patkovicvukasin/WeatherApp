@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/pocetna"
+        android:title="Početna"
+        android:tag="home"/>
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/omiljeni"
+        android:title="Omiljeni"
+        android:tag="favorites"/>
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search"
+        android:title="Pretraga"
+        android:tag="search" />
+</menu>
