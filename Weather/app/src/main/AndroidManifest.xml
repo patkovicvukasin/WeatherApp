@@ -48,7 +48,7 @@
 
         <meta-data
             android:name="https://api.openweathermap.org/data/2.5/weather?q="
-            android:value="7d5f2f287142e4b7d700b150580e4f20" />
+            android:value="" />
 
     </application>
 
