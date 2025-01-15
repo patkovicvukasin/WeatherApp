@@ -10,7 +10,7 @@ import com.android.volley.toolbox.Volley;
 
 public class WeatherService {
 
-    private static final String API_KEY = "7d5f2f287142e4b7d700b150580e4f20";
+    private static final String API_KEY = "";
     private static final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=";
     private static final String UNIT = "&units=metric&lang=eng";
 
